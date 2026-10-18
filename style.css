@@ -527,6 +527,37 @@ section[id] {
 }
 
 
+/* Mobile layout adjustments */
+@media (max-width: 600px) {
+  /* Allow the navigation to fit smaller screens */
+  .topbar {
+    padding: 16px 20px;
+  }
+
+  /* Stack the hero text and image vertically */
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  /* Keep the hero image within the screen */
+  .hero img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Display menu cards in a single column */
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  /* Make section spacing comfortable on phones */
+  .section-pad {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
 
 
